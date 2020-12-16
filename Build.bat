@@ -7,4 +7,4 @@ msbuild VBTest.sln /t:Clean;Rebuild /p:Configuration=Debug -m
 
 vstest.console UnitTestProject1\bin\Debug\UnitTestProject1.dll /Logger:trx
 
-msbuild VBTest.sln /t:Clean;Rebuild /p:Configuration=Release -m
+msbuild VBTest.sln /t:Rebuild /p:Configuration=Release -m
