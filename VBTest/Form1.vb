@@ -1,9 +1,13 @@
 ﻿Public Class Form1
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
 
-        Dim num As Integer = Integer.Parse(TextBox1.Text)
+        Dim num As Integer
 
-        TextBox2.Text = (num * 2).ToString()
+        If Integer.TryParse(TextBox1.Text, num) Then
+            TextBox2.Text = GetDouble(num).ToString()
+        Else
+            TextBox2.Text = "*"
+        End If
 
     End Sub
 

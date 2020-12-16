@@ -13,7 +13,7 @@ Imports VBTest
         Dim value As Integer
 
         value = pObj.Invoke("GetDouble", 2)
-        Assert.AreEqual(value, 4)
+        Assert.AreEqual(4, value)
 
 
     End Sub
@@ -29,7 +29,7 @@ Imports VBTest
         pObj.Invoke("Button1_Click", New Object() {Nothing, Nothing})
         str = CType(pObj.GetProperty("TextBox2"), TextBox).Text
 
-        Assert.AreEqual(str, "2")
+        Assert.AreEqual("2", str)
 
 
     End Sub
@@ -45,7 +45,7 @@ Imports VBTest
         pObj.Invoke("Button1_Click", New Object() {Nothing, Nothing})
         str = CType(pObj.GetProperty("TextBox2"), TextBox).Text
 
-        Assert.AreEqual(str, "2")
+        Assert.AreEqual("*", str)
 
 
     End Sub
