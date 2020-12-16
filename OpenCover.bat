@@ -28,6 +28,6 @@ REM ÉpÉXÇÃê›íË
 SET PATH=%PATH%;%OPEN_COVER%;%MS_TEST%;%REPORT_GEN%
 
 REM OpenCoverÇé¿çs
-OpenCover.Console.exe -register:user -target:"vstest.console.exe" -targetargs:%TARGET_TEST% -targetdir:%TARGET_TEST_DIR% -filter:%FILTER% -output:"%REPORT_FOLDER%\\%RESULT_FILE%"
+OpenCover.Console.exe -target:"vstest.console.exe" -targetargs:%TARGET_TEST% -targetdir:%TARGET_TEST_DIR% -filter:%FILTER% -output:"%REPORT_FOLDER%\\%RESULT_FILE%"
 
 ReportGenerator.exe --reports:"%REPORT_FOLDER%\\%RESULT_FILE%" -targetdir:"%REPORT_FOLDER%"
