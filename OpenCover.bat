@@ -1,10 +1,10 @@
 @echo off
 
-SET OPEN_COVER="packages\OpenCover.4.7.922\tools"
-SET REPORT_GEN="packages\ReportGenerator.4.8.2\tools\net47"
-
 REM Visual Studio 2019 デベロッパー設定
 CALL "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\Tools\VsDevCmd.bat"
+
+SET OPEN_COVER="packages\OpenCover.4.7.922\tools"
+SET REPORT_GEN="packages\ReportGenerator.4.8.2\tools\net47"
 
 REM ターゲットアセンブリの格納先
 SET TARGET_TEST_DIR="UnitTestProject1\bin\Debug"
