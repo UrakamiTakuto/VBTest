@@ -1,0 +1,5 @@
+HTML Publisher plugin
+MSBuild Plugin
+MSTest plugin
+PowerShell plugin
+VSTest Runner plugin
